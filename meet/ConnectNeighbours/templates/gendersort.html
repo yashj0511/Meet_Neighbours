@@ -1,0 +1,24 @@
+
+{% for p in people %}
+<div class="container my-4 mr-3" style="border: 2px solid blue;">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <img src="{{p.Profile_Pic.url}}" width="233px" height="385px">
+            </div>
+        </div>
+
+        <div class="col-md-7">
+            <p> Name: {{p.Firstname}} {{p.Lastname}}</p>
+            <p>AGE: {{p.Age}}</p>
+            <p class="card-text" style="margin: 3px auto;">Gender: {{p.Gender}}</p>
+            <p>Address: {{p.Address}}</p>
+            <p>Status: {{p.Status}}</p>
+            <button class="btn btn-primary"> Meet </button>
+
+
+        </div>
+    </div>
+
+</div>
+{% endfor %}
